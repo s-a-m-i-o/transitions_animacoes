@@ -5,40 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transitions_animations</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 
 <body>
-    <header class="cabecalho">
-        <h1 class="titulo">Titulo da pagina</h1>
+    <header class="cabecalho" id="inicio">
+        <h1 class="titulo">Bruce Weyne</h1>
+        <nav class="navegacao">
+            <a href="#sobre" class="intem-link">Sobre</a>
+            <a href="#projetos" class="intem-link">Projetos</a>
+            <a href="#contato" class="intem-link">Contato</a>
+        </nav>
     </header>
     <main class="conteudo-total">
-        <section class="sobre">
-            <h2 class="subtitulo">titulo section</h2>
+        <section class="sobre" id="sobre">
+            <h2 class="subtitulo">Sobre</h2>
             <div class="card">
-                <img src="" alt="">
-                <p class="descricao"></p>
+                <img src="img.png" alt="Sobre">
+                <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima deserunt, unde saepe nobis debitis optio aut! Debitis totam fuga autem at commodi rem porro velit. Est dolorem architecto tempore velit?</p>
             </div>
+            <button><a href="#inicio" class="btn">↑</a></button>
         </section>
     
-        <section class="projetos">
-            <h2 class="subtitulo">titulo section</h2>
-            <div class="card">
-                <img src="" alt="">
-                <p class="descricao"></p>
+        <section class="projetos" id="projetos">
+            <h2 class="subtitulo">Projetos</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="img.png" alt="Projetos">
+                    <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, error.</p>
+                </div>
+                <div class="card">
+                    <img src="img.png" alt="Projetos">
+                    <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, error.</p>
+                </div>
+                <div class="card">
+                    <img src="img.png" alt="Projetos">
+                    <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, error.</p>
+                </div>
             </div>
+            <button><a href="#inicio" class="btn">↑</a></button>
         </section>
-    
-        <section class="contatos">
-            <h2 class="subtitulo">titulo section</h2>
+        <section class="contato" id="contato">
+            <h2 class="subtitulo">Contato</h2>
             <div class="card">
-                <img src="" alt="">
-                <p class="descricao"></p>
+                <img src="img.png" alt="Contato">
+                <p class="descricao">email@provedor.com.br</p>
             </div>
+            <button><a href="#inicio" class="btn">↑</a></button>
         </section>
     </main>
     <footer class="rodape">
-        <p></p>
-        <p></p>
+        <p>Bruce Weyne</p>
+        <p>2026</p>
     </footer>
 </body>
 
