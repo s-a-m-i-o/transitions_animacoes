@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    border: 2px solid red;
+    width: 100%;
+    height: 150px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    border: solid 1px blue;
+    transition: .7s all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.exemplo1 div.item1:hover {
+    transform: translateX(-20px);
+    border: solid 1px red;
+    box-shadow: 0 5px 15px rgba(201, 4, 4, 0.9);
+    border-radius: 50%;
+}
+
+.exemplo1 div.item2:hover {
+    transform: rotate(180deg);
+    border: 1px solid yellow;
+}
+
+.exemplo1 div.item3:hover {
+    transform: scaleX(5);
+    background-color: blue;
+    text-transform: uppercase;
+}
+
+.exemplo2 div.item1 {
+    animation: rotacao 1.5s linear infinite;
+}
+
+.exemplo2 div.item2 {
+    animation:  esticar .7s ease infinite;
+}
+
+.exemplo2 div.item3 {
+    animation: pendulo 1s ease-in-out infinite;
+}
+
+.exemplo3 div.item1 {
+    animation: geometrico 1s ease-in-out infinite;
+}
+.exemplo3 div.item2 {
+    animation: cores 1s ease-in-out infinite;
+}
+.exemplo3 div.item3 {
+    animation: pulsar .5s ease-in-out infinite;
+}
+
+@keyframes rotacao {
+    0% {transform: rotate(0deg); background-color: green;}
+    25% {transform: rotate(90deg); background-color: blue;}
+    50% {transform: rotate(180deg); background-color: red;}
+    75% {transform: rotate(270deg); background-color: orange;}
+    100% {transform: rotate(360deg); background-color: rgb(238, 255, 0);}
+}
+
+@keyframes esticar {
+    0% {transform: scaleY(0); }
+    50% {transform: scaleY(1);}
+    100% {transform: scaleY(0);}
+}
+
+@keyframes pendulo {
+    0% { transform: translateX(0px);box-shadow: 10px 0px 7px rgba(201, 4, 4, 0.9)}
+    50% { transform: translateX(80px);box-shadow: -10px 0px 7px rgba(201, 4, 4, 0.9)}    
+    100% { transform: translateX(0px);box-shadow: 10px 0px 7px rgba(201, 4, 4, 0.9)}    
+}
+
+@keyframes geometrico {
+    0% {border: 1px solid red; border-radius: 0px;}
+    50% {border: 1px solid blue; border-radius: 100px;}
+    100% {border: 1px solid green; border-radius: 0px;}
+}
+
+@keyframes cores {
+    0% {background-color: red;}
+    50% {background-color: blue;}
+    100% {background-color: green;}
+}
+
+@keyframes pulsar {
+    0% {transform: scale(.9);}
+    50% {transform: scale(1);}
+    75% {transform: scale(1);}
+    100% {transform: scale(.9);}
+}
